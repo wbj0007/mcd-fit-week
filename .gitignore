@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+report.html
+mcd-fit-week-report.html
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+verify_report.html

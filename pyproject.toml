@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcdfitweek"
+version = "0.1.0"
+description = "麦麦轻食周计划：基于麦当劳中国 MCP 的一周三餐规划 Skill"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+mcdfitweek = "mcdfitweek.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mcdfitweek = []

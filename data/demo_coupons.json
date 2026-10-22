@@ -1,0 +1,58 @@
+[
+  {
+    "couponName": "巨无霸套餐立减券",
+    "discount": "省 10 元",
+    "weekdays": [0, 1, 2, 3, 4],
+    "products": ["巨无霸"],
+    "source": "演示数据"
+  },
+  {
+    "couponName": "麦辣鸡腿堡买一送一券",
+    "discount": "省 23.5 元",
+    "weekdays": [2, 3],
+    "products": ["麦辣鸡腿"],
+    "source": "演示数据"
+  },
+  {
+    "couponName": "经典牛堡立减券",
+    "discount": "省 8 元",
+    "weekdays": [0, 1, 2, 3, 4],
+    "products": ["牛堡"],
+    "source": "演示数据"
+  },
+  {
+    "couponName": "深海鳕鱼堡买一送一券",
+    "discount": "省 24 元",
+    "weekdays": [2, 3],
+    "products": ["鳕鱼堡"],
+    "source": "演示数据"
+  },
+  {
+    "couponName": "麦满分早餐组合券",
+    "discount": "省 6 元",
+    "weekdays": [],
+    "products": ["麦满分"],
+    "source": "演示数据"
+  },
+  {
+    "couponName": "麦咖啡上午茶券",
+    "discount": "省 5 元",
+    "weekdays": [],
+    "products": ["咖啡", "奶铁", "玛奇朵", "卡布奇诺"],
+    "source": "演示数据"
+  },
+  {
+    "couponName": "优品豆浆半价券",
+    "discount": "省 4 元",
+    "weekdays": [1],
+    "products": ["豆浆"],
+    "source": "演示数据"
+  },
+  {
+    "couponName": "甜品第二份1元券",
+    "discount": "省 11 元",
+    "weekdays": [5, 6],
+    "products": ["新地"],
+    "source": "演示数据"
+  }
+]

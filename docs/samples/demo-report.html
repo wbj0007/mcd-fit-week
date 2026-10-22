@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麦麦轻食周计划 · 10-22 周四 至 10-28 周三</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+       background: #F7F6F2; color: #2C2C2A; padding: 32px 20px; }
+.wrap { max-width: 960px; margin: 0 auto; }
+.hero { background: #fff; border-radius: 16px; padding: 28px 32px;
+        border: 0.5px solid rgba(0,0,0,.08); margin-bottom: 16px; }
+.hero h1 { font-size: 24px; font-weight: 600; }
+.hero .sub { color: #5F5E5A; font-size: 13px; margin-top: 6px; }
+.hero .tag { display: inline-block; background: #FAEEDA; color: #854F0B;
+             font-size: 12px; padding: 3px 10px; border-radius: 999px; margin-right: 6px; }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 16px 0; }
+.metric { background: #F1EFE8; border-radius: 10px; padding: 14px 16px; }
+.metric .label { font-size: 12px; color: #5F5E5A; }
+.metric .value { font-size: 22px; font-weight: 600; margin-top: 2px; }
+.metric .unit { font-size: 12px; color: #888780; font-weight: 400; }
+.summary { background: #fff; border-radius: 16px; padding: 20px 32px;
+           border: 0.5px solid rgba(0,0,0,.08); margin-bottom: 16px;
+           display: flex; gap: 32px; flex-wrap: wrap; }
+.summary .item .k { font-size: 12px; color: #5F5E5A; }
+.summary .item .v { font-size: 18px; font-weight: 600; margin-top: 2px; }
+.days { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.day { background: #fff; border-radius: 16px; padding: 18px 20px;
+       border: 0.5px solid rgba(0,0,0,.08); }
+.day h2 { font-size: 15px; font-weight: 600; display: flex; justify-content: space-between; }
+.day h2 .kcal { color: #854F0B; font-size: 13px; font-weight: 500; }
+.meal { margin-top: 12px; }
+.meal .slot { font-size: 12px; color: #0F6E56; font-weight: 500; }
+.meal .items { font-size: 13px; margin-top: 3px; line-height: 1.7; }
+.meal .items .p { color: #888780; font-size: 12px; }
+.bar { height: 6px; background: #F1EFE8; border-radius: 3px; margin-top: 10px; overflow: hidden; }
+.bar > div { height: 100%; border-radius: 3px; }
+.day .total { font-size: 12px; color: #5F5E5A; margin-top: 8px; }
+.warn { background: #FCEBEB; color: #791F1F; border-radius: 10px; padding: 12px 16px;
+        font-size: 13px; margin-bottom: 16px; }
+.coupons { background: #fff; border-radius: 16px; padding: 20px 32px;
+           border: 0.5px solid rgba(0,0,0,.08); margin-bottom: 16px; }
+.coupons h3 { font-size: 15px; font-weight: 600; margin-bottom: 10px; }
+.coupons .coupon-day { font-size: 13px; line-height: 1.9; }
+.coupons .coupon-day b { color: #854F0B; }
+.coupons .coupon-item { color: #2C2C2A; }
+.coupons .coupon-item .saving { color: #0F6E56; font-weight: 500; }
+.coupons .coupon-none { color: #888780; font-size: 13px; }
+.coupon-entry { background: #F1EFE8; border-radius: 10px; padding: 14px 18px;
+                font-size: 13px; margin-top: 14px; }
+.coupon-entry .entry-title { font-weight: 600; margin-bottom: 6px; }
+.coupon-entry ul { padding-left: 18px; line-height: 1.9; }
+.coupon-entry .entry-note { color: #888780; margin-top: 6px; font-size: 12px; }
+.apple { color: #888780; font-size: 12px; font-weight: 400; }
+.foot { color: #888780; font-size: 12px; text-align: center; margin-top: 24px; line-height: 1.8; }
+@media (max-width: 720px) { .days { grid-template-columns: 1fr; } .metrics { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>麦麦轻食周计划 <span style="font-size:13px;color:#888780;font-weight:400">McFit Week</span></h1>
+    <div class="sub">
+      <span class="tag">减脂</span>
+      <span class="tag">175 cm / 70 kg</span>
+      <span class="tag">10-22 周四 至 10-28 周三</span>
+    </div>
+    
+    <div class="metrics">
+      <div class="metric"><div class="label">每日目标热量</div>
+        <div class="value">2,057<span class="unit"> kcal</span>
+          <span class="apple">（约 22 个苹果）</span></div></div>
+      <div class="metric"><div class="label">蛋白质</div>
+        <div class="value">112<span class="unit"> g</span></div></div>
+      <div class="metric"><div class="label">脂肪</div>
+        <div class="value">64<span class="unit"> g</span></div></div>
+      <div class="metric"><div class="label">碳水化合物</div>
+        <div class="value">258<span class="unit"> g</span></div></div>
+    </div>
+  </div>
+  <div class="warn">本周总价 ¥962.0 已超出预算 ¥250.0。建议减少小食/饮品、或选择更低价的主餐，计划不会为了凑预算而虚报热量。</div>
+  
+    <div class="summary">
+      <div class="item"><div class="k">周计划总价</div>
+        <div class="v">¥962.0</div></div>
+      <div class="item"><div class="k">周预算</div><div class="v">¥250.0</div></div>
+      <div class="item"><div class="k">平均日热量</div>
+        <div class="v">1,948 kcal
+          <span style="font-size:12px;color:#888780;font-weight:400">（约 21 个苹果）</span></div></div>
+      <div class="item"><div class="k">平均日蛋白</div>
+        <div class="v">100 g</div></div>
+      <div class="item"><div class="k">蛋白达标天数</div>
+        <div class="v">7 / 7 天</div></div>
+    </div>
+  
+  <div class="coupons">
+    <h3>优惠券攻略 · 本周计划涉及餐品哪天有券</h3>
+    <div class="coupon-day"><b>10-22 周四</b>：<span class="coupon-item">深海鳕鱼堡买一送一券[演示数据] <span class="saving">省 24 元</span> → 适用：双层深海鳕鱼堡</span></div><div class="coupon-day"><b>10-23 周五</b>：<span class="coupon-item">麦咖啡上午茶券[演示数据] <span class="saving">省 5 元</span> → 适用：热奶铁中杯</span></div><div class="coupon-day"><b>10-24 周六</b>：<span class="coupon-item">麦咖啡上午茶券[演示数据] <span class="saving">省 5 元</span> → 适用：卡布奇诺大杯</span></div><div class="coupon-day"><b>10-25 周日</b>：<span class="coupon-item">麦满分早餐组合券[演示数据] <span class="saving">省 6 元</span> → 适用：烟肉蛋麦满分</span>；<span class="coupon-item">麦咖啡上午茶券[演示数据] <span class="saving">省 5 元</span> → 适用：咖啡阿芙佳朵、热奶铁大杯</span>；<span class="coupon-item">甜品第二份1元券[演示数据] <span class="saving">省 11 元</span> → 适用：草莓新地</span></div><div class="coupon-day"><b>10-26 周一</b>：<span class="coupon-item">麦咖啡上午茶券[演示数据] <span class="saving">省 5 元</span> → 适用：冰奶铁大杯、热奶铁中杯、热焦糖玛奇朵</span></div><div class="coupon-day"><b>10-27 周二</b>：<span class="coupon-item">优品豆浆半价券[演示数据] <span class="saving">省 4 元</span> → 适用：优品豆浆小杯</span></div><div class="coupon-day"><b>10-28 周三</b>：<span class="coupon-item">经典牛堡立减券[演示数据] <span class="saving">省 8 元</span> → 适用：培根蔬萃双层牛堡</span>；<span class="coupon-item">麦咖啡上午茶券[演示数据] <span class="saving">省 5 元</span> → 适用：卡布奇诺大杯、咖啡阿芙佳朵、热奶铁大杯</span></div>
+    <div class="coupon-day" style="margin-top:8px">按券面额粗略估算，本周计划餐品最多可省 <span class="saving">¥78.0</span>（同一天多张券不可叠加，实际以结算为准）。</div>
+    
+<div class="coupon-entry">
+  <div class="entry-title">优惠券在哪里领（入口说明）</div>
+  <ul>
+    <li><b>麦当劳 App</b>：首页「麦麦省」/「优惠券」频道选券领取；已领的券在「我的 → 卡包 / 优惠券」查看，点餐结算时勾选使用。</li>
+    <li><b>微信小程序「麦当劳」</b>：首页「领券中心」领取，会员中心可查卡包；到店扫码点餐结算页同样可选券。</li>
+    <li><b>MCP 数据侧</b>：available-coupons（麦麦省可领券）/ auto-bind-coupons（一键领券）/ query-my-coupons（我的可用券）/ campaign-calendar（营销活动日历，看哪天有活动）。</li>
+  </ul>
+  <div class="entry-note">当前为演示模式，券为演示数据；领券入口以麦当劳官方 App / 小程序实际为准。</div>
+</div>
+
+  </div>
+  <div class="days">
+      <div class="day">
+        <h2><span>10-22 周四</span>
+            <span class="kcal">1,956 / 2,057 kcal
+              <span style="font-weight:400">（约 21 个苹果）</span></span></h2>
+        <div class="meal"><div class="slot">早餐 · 611 kcal（约 6 个苹果） · 蛋白 31 g</div><div class="items">原味板烧鸡腿炒双蛋堡 <span class="p">419 kcal</span>、大杯玉米杯 <span class="p">87 kcal</span>、雪碧中杯 <span class="p">105 kcal</span></div></div><div class="meal"><div class="slot">午餐 · 709 kcal（约 7 个苹果） · 蛋白 41 g</div><div class="items">双层深海鳕鱼堡 <span class="p">485 kcal</span>、冰牛奶中杯 <span class="p">224 kcal</span></div></div><div class="meal"><div class="slot">晚餐 · 636 kcal（约 7 个苹果） · 蛋白 33 g</div><div class="items">蜜汁BBQ风味薄皮脆汁鸡-带骨里脊 <span class="p">152 kcal</span>、朱古力新地 <span class="p">282 kcal</span>、优品豆浆大杯 <span class="p">202 kcal</span></div></div>
+        <div class="bar"><div style="width:95%;background:#EF9F27;"></div></div>
+        <div class="total">蛋白 105/112 g
+          (94%) · 脂肪 69 g · 碳水 216 g
+          · 钠 2595 mg · ¥136.0</div>
+      </div>
+      <div class="day">
+        <h2><span>10-23 周五</span>
+            <span class="kcal">1,911 / 2,057 kcal
+              <span style="font-weight:400">（约 20 个苹果）</span></span></h2>
+        <div class="meal"><div class="slot">早餐 · 605 kcal（约 6 个苹果） · 蛋白 25 g</div><div class="items">猪柳炒双蛋堡 <span class="p">437 kcal</span>、大杯怡泉+C <span class="p">168 kcal</span></div></div><div class="meal"><div class="slot">午餐 · 768 kcal（约 8 个苹果） · 蛋白 41 g</div><div class="items">牛气满满 <span class="p">495 kcal</span>、大杯玉米杯 <span class="p">87 kcal</span>、热奶铁中杯 <span class="p">186 kcal</span></div></div><div class="meal"><div class="slot">晚餐 · 538 kcal（约 6 个苹果） · 蛋白 30 g</div><div class="items">儿童鱼排堡 <span class="p">269 kcal</span>、冰牛奶大杯 <span class="p">269 kcal</span></div></div>
+        <div class="bar"><div style="width:93%;background:#EF9F27;"></div></div>
+        <div class="total">蛋白 96/112 g
+          (86%) · 脂肪 76 g · 碳水 200 g
+          · 钠 2166 mg · ¥142.0</div>
+      </div>
+      <div class="day">
+        <h2><span>10-24 周六</span>
+            <span class="kcal">2,039 / 2,057 kcal
+              <span style="font-weight:400">（约 21 个苹果）</span></span></h2>
+        <div class="meal"><div class="slot">早餐 · 579 kcal（约 6 个苹果） · 蛋白 27 g</div><div class="items">原味板烧鸡腿炒双蛋堡 <span class="p">419 kcal</span>、雪碧大杯 <span class="p">160 kcal</span></div></div><div class="meal"><div class="slot">午餐 · 888 kcal（约 9 个苹果） · 蛋白 39 g</div><div class="items">卡布奇诺大杯 <span class="p">223 kcal</span>、专“薯鱼”你 <span class="p">463 kcal</span>、优品豆浆大杯 <span class="p">202 kcal</span></div></div><div class="meal"><div class="slot">晚餐 · 572 kcal（约 6 个苹果） · 蛋白 32 g</div><div class="items">双层深海鳕鱼堡 <span class="p">485 kcal</span>、大杯玉米杯 <span class="p">87 kcal</span></div></div>
+        <div class="bar"><div style="width:99%;background:#EF9F27;"></div></div>
+        <div class="total">蛋白 98/112 g
+          (88%) · 脂肪 74 g · 碳水 237 g
+          · 钠 2494 mg · ¥131.0</div>
+      </div>
+      <div class="day">
+        <h2><span>10-25 周日</span>
+            <span class="kcal">1,915 / 2,057 kcal
+              <span style="font-weight:400">（约 20 个苹果）</span></span></h2>
+        <div class="meal"><div class="slot">早餐 · 509 kcal（约 5 个苹果） · 蛋白 29 g</div><div class="items">热奶铁大杯 <span class="p">249 kcal</span>、烟肉蛋麦满分 <span class="p">260 kcal</span></div></div><div class="meal"><div class="slot">午餐 · 772 kcal（约 8 个苹果） · 蛋白 41 g</div><div class="items">蜜汁快乐 <span class="p">258 kcal</span>、草莓新地 <span class="p">245 kcal</span>、冰牛奶大杯 <span class="p">269 kcal</span></div></div><div class="meal"><div class="slot">晚餐 · 634 kcal（约 7 个苹果） · 蛋白 30 g</div><div class="items">牛气满满 <span class="p">495 kcal</span>、咖啡阿芙佳朵 <span class="p">139 kcal</span></div></div>
+        <div class="bar"><div style="width:93%;background:#EF9F27;"></div></div>
+        <div class="total">蛋白 100/112 g
+          (89%) · 脂肪 77 g · 碳水 194 g
+          · 钠 2392 mg · ¥138.0</div>
+      </div>
+      <div class="day">
+        <h2><span>10-26 周一</span>
+            <span class="kcal">2,037 / 2,057 kcal
+              <span style="font-weight:400">（约 21 个苹果）</span></span></h2>
+        <div class="meal"><div class="slot">早餐 · 621 kcal（约 7 个苹果） · 蛋白 35 g</div><div class="items">原味板烧鸡腿炒双蛋堡 <span class="p">419 kcal</span>、优品豆浆大杯 <span class="p">202 kcal</span></div></div><div class="meal"><div class="slot">午餐 · 818 kcal（约 9 个苹果） · 蛋白 39 g</div><div class="items">双层深海鳕鱼堡 <span class="p">485 kcal</span>、可乐中杯 <span class="p">147 kcal</span>、热奶铁中杯 <span class="p">186 kcal</span></div></div><div class="meal"><div class="slot">晚餐 · 598 kcal（约 6 个苹果） · 蛋白 32 g</div><div class="items">儿童鱼排堡 <span class="p">269 kcal</span>、冰奶铁大杯 <span class="p">162 kcal</span>、热焦糖玛奇朵 <span class="p">167 kcal</span></div></div>
+        <div class="bar"><div style="width:99%;background:#EF9F27;"></div></div>
+        <div class="total">蛋白 106/112 g
+          (95%) · 脂肪 74 g · 碳水 230 g
+          · 钠 2389 mg · ¥145.0</div>
+      </div>
+      <div class="day">
+        <h2><span>10-27 周二</span>
+            <span class="kcal">1,879 / 2,057 kcal
+              <span style="font-weight:400">（约 20 个苹果）</span></span></h2>
+        <div class="meal"><div class="slot">早餐 · 524 kcal（约 6 个苹果） · 蛋白 29 g</div><div class="items">猪柳炒双蛋堡 <span class="p">437 kcal</span>、大杯玉米杯 <span class="p">87 kcal</span></div></div><div class="meal"><div class="slot">午餐 · 719 kcal（约 8 个苹果） · 蛋白 39 g</div><div class="items">牛气满满 <span class="p">495 kcal</span>、冰牛奶中杯 <span class="p">224 kcal</span></div></div><div class="meal"><div class="slot">晚餐 · 636 kcal（约 7 个苹果） · 蛋白 34 g</div><div class="items">双层深海鳕鱼堡 <span class="p">485 kcal</span>、优品豆浆小杯 <span class="p">151 kcal</span></div></div>
+        <div class="bar"><div style="width:91%;background:#EF9F27;"></div></div>
+        <div class="total">蛋白 102/112 g
+          (91%) · 脂肪 81 g · 碳水 173 g
+          · 钠 2548 mg · ¥133.5</div>
+      </div>
+      <div class="day">
+        <h2><span>10-28 周三</span>
+            <span class="kcal">1,901 / 2,057 kcal
+              <span style="font-weight:400">（约 20 个苹果）</span></span></h2>
+        <div class="meal"><div class="slot">早餐 · 579 kcal（约 6 个苹果） · 蛋白 27 g</div><div class="items">原味板烧鸡腿炒双蛋堡 <span class="p">419 kcal</span>、雪碧大杯 <span class="p">160 kcal</span></div></div><div class="meal"><div class="slot">午餐 · 691 kcal（约 7 个苹果） · 蛋白 37 g</div><div class="items">培根蔬萃双层牛堡 <span class="p">442 kcal</span>、热奶铁大杯 <span class="p">249 kcal</span></div></div><div class="meal"><div class="slot">晚餐 · 631 kcal（约 7 个苹果） · 蛋白 32 g</div><div class="items">儿童鱼排堡 <span class="p">269 kcal</span>、咖啡阿芙佳朵 <span class="p">139 kcal</span>、卡布奇诺大杯 <span class="p">223 kcal</span></div></div>
+        <div class="bar"><div style="width:92%;background:#EF9F27;"></div></div>
+        <div class="total">蛋白 96/112 g
+          (86%) · 脂肪 75 g · 碳水 201 g
+          · 钠 2236 mg · ¥136.5</div>
+      </div></div>
+  <div class="foot">
+    数据来源：演示数据（麦当劳 MCP 返回快照）<br>
+    热量直观换算：1 个中等苹果 ≈ 95 kcal（USDA medium apple，约 182 g 可食部）。<br>
+    本报告由「麦麦轻食周计划」自动生成，仅供参考，不构成医疗或营养专业建议；
+    餐品信息、价格、优惠券及供应情况以麦当劳官方渠道实时结果为准。
+  </div>
+</div>
+</body>
+</html>
